@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>অ্যাডমিন প্যানেল</title><link rel="stylesheet" href="style.css"></head>
+<body><header><a class="brand" href="index.html">Pay<span>Verify</span></a><a href="index.html">পেমেন্ট ফর্ম</a></header>
+<main class="card wide">
+<div class="eyebrow">ADMIN AREA</div><h1>অ্যাডমিন প্যানেল</h1>
+<div id="loginBox">
+<p class="muted">শুধু অনুমোদিত অ্যাডমিন পাসওয়ার্ড দিয়ে প্রবেশ করুন।</p>
+<label for="password">অ্যাডমিন পাসওয়ার্ড</label><input id="password" type="password" placeholder="অ্যাডমিন পাসওয়ার্ড লিখুন">
+<button id="loginBtn">লগইন / পাসওয়ার্ড সেট</button><div id="loginMsg" class="result"></div>
+</div>
+<section id="dashboard" hidden>
+<div class="toolbar"><p class="muted">আবেদনগুলো দেখুন এবং যাচাই শেষে অবস্থা পরিবর্তন করুন।</p><button id="logoutBtn" class="secondary">লগআউট</button></div>
+<div id="payments"></div><button id="clearBtn" class="danger">সব ডেমো আবেদন মুছুন</button>
+</section>
+<p class="small">সতর্কতা: এটি এখনও ডেমো লগইন। কোডের ভেতরে পাসওয়ার্ড থাকায় বাস্তব নিরাপত্তার জন্য Firebase Authentication ও Security Rules লাগবে।</p>
+</main><footer>© PayVerify — নমুনা প্রকল্প</footer><script src="admin.js"></script></body></html>
